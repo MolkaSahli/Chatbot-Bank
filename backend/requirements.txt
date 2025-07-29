@@ -1,0 +1,6 @@
+Django>=4.2.0
+djangorestframework>=3.14.0
+django-cors-headers>=4.0.0
+django-otp>=1.1.0
+qrcode>=7.4.2
+Pillow>=9.5.0
