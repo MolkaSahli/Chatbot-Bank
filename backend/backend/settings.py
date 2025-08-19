@@ -61,7 +61,7 @@ MIDDLEWARE = [
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.SessionAuthentication',
+       # 'rest_framework.authentication.SessionAuthentication',
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
@@ -86,9 +86,14 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_CREDENTIALS = True
-SESSION_COOKIE_SAMESITE = 'None'  # Si vous utilisez des cookies
-CSRF_COOKIE_SAMESITE = 'None'
+#SESSION_COOKIE_SAMESITE = 'None'  # Si vous utilisez des cookies
+#CSRF_COOKIE_SAMESITE = 'None'
 
+
+SESSION_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
 
 ROOT_URLCONF = "backend.urls"
 
@@ -144,6 +149,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+ADDITIONAL_REQUIREMENTS = [
+    'langchain==0.3.27',
+    'langchain-community==0.3.27', 
+    'ollama==0.5.1',
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
