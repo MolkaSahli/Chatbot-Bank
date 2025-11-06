@@ -40,18 +40,23 @@ The frontend, developed with **React.js** and styled using **Tailwind CSS**, pro
 
 ### Step 1 — User Login
 The user logs in using their username, email, and password. The credentials are validated via the Django REST API.
+
 <img src="captures/login.png" alt="First Login Page" width="500"/>
+
 
 ### Step 2 — Password Update (First Login)
 On first login, the user is prompted to change their temporary password.
+
 <img src="captures/changMdp.png" alt="Password Update Page" width="500"/>
 
 ### Step 3 — Two-Factor Authentication (2FA)
 A **QR code** is generated to set up **Google Authenticator**. The user scans it and provides a one-time code to activate 2FA.
+
 <img src="captures/affQRcode.png" alt="Password Update Page" width="500"/>
 
 ### Step 4 — Login with 2FA (Second Login)
 After setting up two-factor authentication, the next login requires the user to enter their **6-digit code** from Google Authenticator in addition to their credentials.
+
 <img src="captures/2faVerf.png" alt="Login with 2FA Page" width="500"/>
 
 ### Step 5 — Session Management
