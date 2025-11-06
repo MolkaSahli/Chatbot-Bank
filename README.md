@@ -69,7 +69,7 @@ Once authenticated, the user’s session is maintained using **JWT tokens**, wit
 After successful authentication, the user is redirected to the **Chatbot Dashboard**, which allows real-time interaction with the banking assistant.  
 The chatbot processes user queries and provides relevant responses instantly.
 
-<img src="captures/chat_interface.png" alt="Chatbot Interface" width="600"/>
+<img src="captures/chat.png" alt="Chatbot Interface" width="600"/>
 
 ---
 ## 🗄️ Database Schema
