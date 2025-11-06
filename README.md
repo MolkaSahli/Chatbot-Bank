@@ -119,10 +119,7 @@ venv\Scripts\activate
 
 #### b. Install dependencies
 ```bash
-# Create the virtual environment
-python -m venv venv
-# Activate it
-venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
 #### c. Apply database migrations
